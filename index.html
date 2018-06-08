@@ -11,7 +11,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1 id="titre">Hello, world!</h1>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -21,6 +21,11 @@
   
     <script>
     
+        
+        var prenom = prompt("Saisisez votre nom :");
+        if (prenom != null) {
+            document.getElementById("titre").innerHTML = prenom;
+        }
         var nom = "Jocelyn";
         var tab = [];
 
@@ -30,11 +35,17 @@
         tab.unshift("hello");
         tab.push("fucking");
         tab.push("world");
-        tab.splice(1); // Premier parametre = indice de l'élelement à supprimer - 2sd parametre = Nombre d'elements a supprimer
+        tab.splice(1, 0); // Premier parametre = indice de l'élelement à supprimer - 2sd parametre = Nombre d'elements a supprimer
         //console.log(tab);
 
-        var saisie = prompt("Saisissez votre nom : ");
-        alert("Bonjour " + saisie);
+        /*for (var i=0; i<tab.length; i++) {
+            alert(tab[i]);
+        }*/
+        
+        console.log(document.getElementById("titre").innerHTML); // innerHTML permet de récupérer le contenu (text) de l'element sélectionné
+
+        //var saisie = prompt("Saisissez votre nom : ");
+        //alert("Bonjour " + saisie);
 
     </script>
 
