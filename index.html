@@ -12,13 +12,21 @@
   </head>
   <body>
     <h1 id="titre">Hello, world!</h1>
+    <p class="text-succes">Premier paragraphe</p>
+    <p>Second paragraphe</p>
+    <p class ="text-succes">Troisième paragraphe</p>
+
+    <button id="btn" class="btn btn-success">Action</button>
+
+    <input id="recherche" type="text"/>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  
+    <script src="exemple.js"></script>
+
     <script>
     
         
@@ -26,7 +34,24 @@
         if (prenom != null) {
             document.getElementById("titre").innerHTML = prenom;
         }
-        var nom = "Jocelyn";
+
+        /*var list = document.getElementsByTagName("p");
+        console.log(list);
+        window.alert(list[1].innerHTML);
+
+        var deuxiemeListe = document.getElementsByClassName("text-succes");
+        console.log(deuxiemeListe);
+        window.alert(deuxiemeListe[1].innerHTML);
+
+        var paras = document.getElementsByTagName("p");
+        var long = paras.length;
+
+        for (i=0; i<long; i++){
+
+        } */
+        
+
+        //var nom = "Jocelyn";
         var tab = [];
 
         //console.log(typeof(tab));
@@ -46,7 +71,7 @@
 
         //var saisie = prompt("Saisissez votre nom : ");
         //alert("Bonjour " + saisie);
-
+        // Modification d'une variable externe = closure
     </script>
 
     </body>
