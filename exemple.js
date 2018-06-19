@@ -57,5 +57,25 @@ for(var i=0; i<onglets.length; i++){
         })
 
     }
+
+    var lignes = document.getElementsByClassName("idiot");
+    for(var i=0; i<lignes.length; i++){
+        lignes[i].addEventListener("click", function() {
+            var ck = this.getAttribute("data-ck");
+            ck = document.getElementById(ck);
+            ck.addEventListener("click", function (e) {
+                e.stopPropagation();
+            });
+            ck.checked = (ck.checked === true)?false : true;
+        })
+    }
+
+    var ajout = document.getElementById("add");
+    ajout.addEventListener("click", function() {
+        var liste = document.getElementById("liste");
+        var uneTache = document.createElement("li");
+        uneTache.innerHTML = document.getElementById("tache").value;
+        liste.appendChild(uneTache);
+    });
     
 
