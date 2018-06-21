@@ -78,4 +78,14 @@ for(var i=0; i<onglets.length; i++){
         liste.appendChild(uneTache);
     });
     
+    var Eleves = function(nom, prenom) {  // Constructeur
+        this.nom = nom;
+        this.prenom = prenom;
+        this.bonjout = function () {
+            alert(this.nom + ' ' + this.prenom);
+        }
+    };
+    var e1 = new Eleves("Safrano","Jocelyn"); 
+    e1.bonjour;
 
+    
