@@ -1,0 +1,222 @@
+<!doctype html>
+<?php include '../config/config-genos.php'; ?>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+       <!-- <style>
+                body{
+                  background-color: #F2F2F2;
+                }
+          
+                .hidden{
+                  display:none;
+                }
+        </style>
+        </head>
+            <body>
+              <section class="container">
+                
+          
+                <div class="row">
+                  <div class="col-md-12">
+                    <button id="btn-1" class="onglet btn btn-primary">Onglet 1</button>
+                    <button id="btn-2" class="onglet btn btn-default">Onglet 2</button>
+                    <button id="btn-3" class="onglet btn btn-default">Onglet 3</button>
+                    <button id="btn-4" class="onglet btn btn-default">Onglet 4</button>
+                  </div>
+          
+                </div>
+                
+                <br><br>
+          
+                <div class="row bloc" id="bloc-1">
+                  <div class="col-md-3">
+                    <img src="img/Desert.jpg" class=" mini img-fluid">          
+                  </div>
+          
+                  <div class="col-md-9">
+                    <h1>Texte Onglet 1</h1>    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad alias accusantium doloremque dolores in soluta, ut, aliquid at eum doloribus. Iure, deleniti. Ad numquam laudantium non sed, unde ea.</p>      
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad alias accusantium doloremque dolores in soluta, ut, aliquid at eum doloribus. Iure, deleniti. Ad numquam laudantium non sed, unde ea.</p>      
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad alias accusantium doloremque dolores in soluta, ut, aliquid at eum doloribus. Iure, deleniti. Ad numquam laudantium non sed, unde ea.</p>      
+                  </div>
+          
+                </div>
+          
+                <div class="row bloc hidden" id="bloc-2">
+                  <div class="col-md-3">
+                    <img src="img/Desert.jpg" class=" mini img-fluid">          
+                  </div>
+          
+                  <div class="col-md-9">
+                    <h1>Texte Onglet 2</h1>    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad alias accusantium doloremque dolores in soluta, ut, aliquid at eum doloribus. Iure, deleniti. Ad numquam laudantium non sed, unde ea.</p>      
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad alias accusantium doloremque dolores in soluta, ut, aliquid at eum doloribus. Iure, deleniti. Ad numquam laudantium non sed, unde ea.</p>      
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad alias accusantium doloremque dolores in soluta, ut, aliquid at eum doloribus. Iure, deleniti. Ad numquam laudantium non sed, unde ea.</p>      
+                  </div>
+          
+                </div>
+          
+                <div class="row bloc hidden" id="bloc-3">
+                  <div class="col-md-3">
+                    <img src="img/Desert.jpg" class=" mini img-fluid">          
+                  </div>
+          
+                  <div class="col-md-9">
+                    <h1>Texte Onglet 3</h1>    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad alias accusantium doloremque dolores in soluta, ut, aliquid at eum doloribus. Iure, deleniti. Ad numquam laudantium non sed, unde ea.</p>      
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad alias accusantium doloremque dolores in soluta, ut, aliquid at eum doloribus. Iure, deleniti. Ad numquam laudantium non sed, unde ea.</p>      
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad alias accusantium doloremque dolores in soluta, ut, aliquid at eum doloribus. Iure, deleniti. Ad numquam laudantium non sed, unde ea.</p>      
+                  </div>
+          
+                </div>
+          
+                <div class="row bloc hidden" id="bloc-4">
+                  <div class="col-md-3">
+                    <img src="img/Desert.jpg" class=" mini img-fluid">          
+                  </div>
+          
+                  <div class="col-md-9">
+                    <h1>Texte Onglet 4</h1>    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad alias accusantium doloremque dolores in soluta, ut, aliquid at eum doloribus. Iure, deleniti. Ad numquam laudantium non sed, unde ea.</p>      
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad alias accusantium doloremque dolores in soluta, ut, aliquid at eum doloribus. Iure, deleniti. Ad numquam laudantium non sed, unde ea.</p>      
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad alias accusantium doloremque dolores in soluta, ut, aliquid at eum doloribus. Iure, deleniti. Ad numquam laudantium non sed, unde ea.</p>      
+                  </div>
+          
+                </div>
+              </section>
+              <div class="container pt-4">
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Prenom</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="idiot" data-ck="ck1">
+                      <td><input id="ck1" type="checkbox"></td>
+                      <td>Safrano</td>
+                      <td>Jocelyn</td>
+                  </tr>
+                  <tr class="idiot" data-ck="ck2">
+                      <td><input id="ck2" type="checkbox"></td>
+                      <td>Chann</td>
+                      <td>Christopher</td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+              <div class="container pt-4">
+              <h4>TODO list</h4>                
+              <input type="text" id="tache" placeholder="Ajoutez une nouvelle tâche">
+              <button type="button" id="add" class="btn btn-primary">Ajouter</button>
+              <ul id="liste">
+
+              </ul>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+                  </div>
+                </div>
+              </div>
+
+    
+                <div class="col-md-12">
+                            <img id="main" src="img/Desert.jpg" height="640" width="480" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/Desert.jpg" height="320" width="240" class="mini img-fluid">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/Jellyfish.jpg" height="320" width="240" class="mini img-fluid">
+                    </div>
+                    <div class="col-md-3">        
+                        <img src="img/Koala.jpg" height="320" width="240" class="mini img-fluid">
+                    </div>
+                </div>
+                    <h1 id="titre">Hello, world!</h1>
+                    <p class="text-succes">Premier paragraphe</p>
+                    <p>Second paragraphe</p>
+                    <p class ="text-succes">Troisième paragraphe</p>
+
+                <button id="btn" class="btn btn-success">Action</button>
+
+                <input id="recherche" type="text"/>-->
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script src="exemple.js"></script>
+        <script src="jquery.min.js"></script>
+
+        <script>
+        
+            
+            /*var prenom = prompt("Saisisez votre nom :");
+            if (prenom != null) {
+                document.getElementById("titre").innerHTML = prenom;
+            }
+
+            var list = document.getElementsByTagName("p");
+            console.log(list);
+            window.alert(list[1].innerHTML);
+
+            var deuxiemeListe = document.getElementsByClassName("text-succes");
+            console.log(deuxiemeListe);
+            window.alert(deuxiemeListe[1].innerHTML);
+
+            var paras = document.getElementsByTagName("p");
+            var long = paras.length;
+
+            for (i=0; i<long; i++){
+
+            } 
+            
+
+            //var nom = "Jocelyn";
+            var tab = [];
+
+            //console.log(typeof(tab));
+            //alert(nom);
+
+            tab.unshift("hello");
+            tab.push("fucking");
+            tab.push("world");
+            tab.splice(1, 0); // Premier parametre = indice de l'élelement à supprimer - 2sd parametre = Nombre d'elements a supprimer
+            //console.log(tab);
+
+            /*for (var i=0; i<tab.length; i++) {
+                alert(tab[i]);
+            }
+            
+            console.log(document.getElementById("titre").innerHTML); // innerHTML permet de récupérer le contenu (text) de l'element sélectionné
+
+            //var saisie = prompt("Saisissez votre nom : ");
+            //alert("Bonjour " + saisie);
+            // Modification d'une variable externe = closure*/
+
+            $(function(){
+              alert();
+            });
+        </script>
+      </div>
+    </div>    
+    </body>
+</html>

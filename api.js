@@ -1,0 +1,1 @@
+var rech = $(this).val();
